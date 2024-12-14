@@ -6,50 +6,65 @@
     <meta name="description" content="Mobile Repair Shop in Dera Bassi, Punjab - Sony Communication">
     <title>Sony Communication - Mobile Repair Shop</title>
     <style>
+        /* Mobile First Design */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             line-height: 1.6;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-image: url('20241214_193418.jpg'); /* Banner Image */
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 20px 0;
+            padding: 50px 15px;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 3.5em;
+            font-weight: bold;
         }
         header p {
             font-size: 1.2em;
         }
         .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px 0;
+            width: 100%;
+            padding: 15px;
         }
         .section {
             background-color: white;
-            padding: 20px;
+            padding: 15px;
             margin-top: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        h2, h3 {
-            color: #333;
+        .section h2, .section h3 {
+            color: #ff7f00;
+            font-size: 1.8em;
+            margin-bottom: 15px;
         }
-        p, ul {
-            font-size: 1.1em;
+        .section h2 {
+            border-bottom: 2px solid #ff7f00;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 1em;
+            margin-bottom: 10px;
         }
         ul {
             list-style-type: none;
             padding-left: 0;
         }
         ul li {
+            font-size: 1em;
             padding: 10px 0;
+            border-bottom: 1px solid #ddd;
         }
         a {
             color: #0066cc;
@@ -60,26 +75,81 @@
         }
         .contact-info a {
             display: inline-block;
-            padding: 10px 20px;
-            margin-top: 10px;
-            background-color: #0066cc;
+            padding: 12px 25px;
+            margin-top: 20px;
+            background-color: #ff7f00;
             color: white;
+            font-size: 1.2em;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         .contact-info a:hover {
-            background-color: #005bb5;
+            background-color: #e67e00;
         }
         iframe {
             width: 100%;
             border: 0;
-            height: 400px;
+            height: 300px;
+            margin-top: 20px;
         }
         footer {
             text-align: center;
-            background-color: #333;
+            background-color: #ff7f00;
             color: white;
-            padding: 10px 0;
+            padding: 10px;
             margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+        }
+        .cta {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+        .cta:hover {
+            background-color: #45a049;
+        }
+
+        /* Larger Devices */
+        @media (min-width: 768px) {
+            header h1 {
+                font-size: 3.5em;
+            }
+            .container {
+                width: 85%;
+                margin: 0 auto;
+            }
+            .section {
+                padding: 20px;
+            }
+            .section h2, .section h3 {
+                font-size: 2em;
+            }
+            .cta {
+                font-size: 1.2em;
+            }
+            iframe {
+                height: 400px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            header h1 {
+                font-size: 4em;
+            }
+            .container {
+                width: 75%;
+            }
+            .cta {
+                font-size: 1.3em;
+            }
         }
     </style>
 </head>
@@ -93,7 +163,7 @@
     <div class="container">
 
         <div class="section">
-            <h2><a href="https://wa.me/919592550013" target="_blank">Click To Chat on Whatsapp</a></h2>
+            <h2><a href="https://wa.me/919592550013" target="_blank" class="cta">Click To Chat on Whatsapp</a></h2>
         </div>
 
         <div class="section">
