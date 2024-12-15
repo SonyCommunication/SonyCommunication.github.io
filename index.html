@@ -16,25 +16,43 @@
             color: #333;
         }
         header {
-            background-image: url('20241214_193418.jpg'); /* Banner Image */
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 50px 15px;
+    position: relative;
+    background-image: url('https://i.imgur.com/UWwvtGV.jpeg'); /*url('20241214_193418.jpg');  Banner Image */
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0px;
+    text-align: center;
+    color: orange; /* Set text color to orange */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    filter: blur(5px); /* Apply blur effect */
+    z-index: -1; /* Ensure overlay is behind text */
+}
+
+header h1, header p {
+    position: relative; /* Ensure text is in front of the overlay */
+}
+
+        .header-background {
+            background-color: rgba(0,0,0,0.7);
+            color: rgba(245, 176, 48);
+            padding: 0px;
+            border-radius: 0px;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3.5em;
-            font-weight: bold;
-        }
-        header p {
-            font-size: 1.2em;
+            width: 100%;
         }
         .container {
             width: 100%;
-            padding: 15px;
+            padding: 0px;
         }
         .section {
             background-color: white;
@@ -155,15 +173,32 @@
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to Sony Communication</h1>
-        <p>Your Trusted Mobile Repair Shop</p>
-    </header>
+<header>
+    <div class="header-background">
+        <h1>ਜੀ ਆਈਆਂ ਨੂੰ ਸੋਨੀ ਕਮਿਊਨੀਕੇਸ਼ਨ</h1>
+        <p>(Welcome to Sony Communication)</p>
+        <!-- <p>Your Trusted Mobile Repair Shop</p> -->
+    </div>
+</header>
 
     <div class="container">
 
         <div class="section">
-            <h2><a href="https://wa.me/919592550013" target="_blank" class="cta">Click To Chat on Whatsapp</a></h2>
+            <center>
+
+                <table>
+                    <td>
+                        <img src="whataspp.png" alt="Whatsapp Logo" style="width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; padding: 20px;"><h3></h3>
+                    </td>
+                    <td>
+                        <a href="https://wa.me/919592550013" target="_blank" class="cta" style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+                            ਵਾਟਸਐਪ ਤੇ ਚੈਟ ਕਰਨ ਲਈ ਕਲਿਕ ਕਰੋ<br>
+                            व्हाट्सएप पर चैट करने के लिए क्लिक करें<br>
+                            Click To Chat on Whatsapp
+                        </a></h3>
+                    </td>
+                </table>
+            </center>
         </div>
 
         <div class="section">
@@ -197,7 +232,7 @@
         <div class="section contact-info">
             <h2>Contact Us</h2>
             <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/mrokzi1Ph69s3kQU8" target="_blank">Shop No 1, Street Number 4, Saraswati Vihar, Dera Bassi, Punjab 140507</a></p>
-            <p><strong>Phone:</strong> <a href="tel:+919592550013">09592550013</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+919592550013">09592550013</a> <a href="tel:+917900010005">7900010005</a></p>
             <a href="https://wa.me/919592550013" target="_blank">Contact us via Whatsapp</a>
         </div>
 
